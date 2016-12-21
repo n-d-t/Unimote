@@ -1,0 +1,12 @@
+<ion-view view-title="Remotes">
+    <ion-nav-buttons side="right">
+       <a href="#/upload"><button class="button button-light button-outline icon ion-plus"></button></a>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="remote in remotes" href="#/app/remotes/{{remote.id}}">
+                {{remote.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

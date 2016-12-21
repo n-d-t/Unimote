@@ -1,0 +1,15 @@
+<ion-view view-title="Upload">
+    <ion-content>
+      <ion-list>
+          <ion-item>
+            <input type="file" id="files" name="file" />
+            <img ng-src={{imgFile}}></img>
+            <br>
+            <button class="button button-royal" ng-click="readBlob()">Load</button>
+            <br>{{imgFile}}
+            <div id="content"></div>
+          </ion-item>
+      </ion-list>
+      <div id="output"></div>
+    </ion-content>
+</ion-view>

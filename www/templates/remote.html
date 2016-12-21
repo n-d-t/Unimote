@@ -1,0 +1,12 @@
+<ion-view view-title="RemoteView">
+  <ion-content>
+    <ion-list>
+      <button class="button button-light button-outline icon ion-plus" ng-click="makeconnect()"></button>
+      <ion-item class='item-divider'>Flag : {{remoteClient}}</ion-item>
+      <ion-item class='item-divider'>Remote ID: {{remoteId}}</ion-item>
+      <ion-item class='item-divider'>Remote Name: {{remoteName}}</ion-item>
+      <uni-elem ng-repeat="element in remoteElem" ctrl-elem="element" ctrl-click="send(data)"></uni-elem>
+    </ion-list>
+  </ion-content>
+  <div id="flag"></div>
+</ion-view>
